@@ -4,14 +4,14 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        hashset = set()
+        hashset = set()# creating set
         count = 0
         for i in s:
-            if i not in hashset:
-                hashset.add(i)
+            if i not in hashset: 
+                hashset.add(i) # adding in set
             else:
-                hashset.remove(i)
+                hashset.remove(i) # remove from set
                 count += 2
-        if len(hashset) != 0:
+        if len(hashset) != 0: # if length of set is not equal to 0
             count += 1
-        return count
+        return count # returning count
